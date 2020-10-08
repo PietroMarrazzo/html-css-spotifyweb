@@ -17,6 +17,22 @@ body {
 .flex-column {
   flex-direction: column;
 }
+.p-absolute {
+  position: absolute;
+}
+.p-relative {
+  position: relative;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.w-100 {
+  width: 100%;
+}
+
 /* page */
 .app-container {
   height: 100vh;
@@ -36,9 +52,61 @@ body {
   width: 200px;
 }
 
+/* Main-page */
+.main-page {
+  flex-grow: 1;
+  top: 0;
+  left: 0;
+}
+
+/* transparent upgrade */
+.main-page .upgrade-fixed {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #0000008a;
+}
+
+.main-page .upgrade-fixed a {
+  padding-right: 50px;
+  color: white;
+  opacity: 1;
+}
+
+/* navigation music genres */
+.main-page .scrolling {
+  padding: 90px 15px 30px 15px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.main-page .genres-navbar {
+  width: 100%;
+  justify-content: center;
+}
+
+.main-page .genres-navbar ul {
+  list-style: none;
+}
 
 
-/* section bottom bottom bar */
+.main-page .genres-navbar ul li a{
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.main-page .scrolling .row-container-img {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-page .scrolling .row-container-img .title {
+}
+
+/* SECTION BOTTOM bottom bar */
 .navbar-bottom {
   /* debug color */
   background-color: brown;
