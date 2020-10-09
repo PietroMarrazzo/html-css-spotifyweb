@@ -262,7 +262,7 @@ h5 {
   flex-grow: 1;
   top: 0;
   left: 0;
-  background-color: gray;
+  background-color: #121212;
 }
 
 /* transparent upgrade */
@@ -286,6 +286,12 @@ h5 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
+  transition: font-size .2s, background-color .2s;
+}
+
+.main-page .upgrade-fixed a:hover {
+  font-size: 14px;
+  background-color: black;
 }
 
 /* navigation music genres */
@@ -301,7 +307,7 @@ h5 {
 
 .main-page .genres-navbar {
   /* debug color */
-  background-color: gray;
+  background-color: #121212;
   width: 100%;
   justify-content: center;
 }
@@ -338,7 +344,7 @@ h5 {
 /* SECTION BOTTOM bottom bar */
 .player-bottom {
   /* debug color */
-  background-color: brown;
+  background-color: #282828;
   height: 70px;
   justify-content: space-between;
 }
