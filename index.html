@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1-0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
@@ -15,15 +16,22 @@
         <!-- navbar fixed left -->
         <div class="sidebar-left flex flex-column">
           <div class="sidebar-box-top">
-            <img src="" alt="logo">
+            <a href="#"><img src="" alt="logo">
+            </a>
             <!-- box utilities -->
             <div class="utilities">
               <ul>
-                <li>Home
+                <li>
+                  <a href="#">Home
+                  </a>
                 </li>
-                <li>Home
+                <li>
+                  <a href="#">Cerca
+                  </a>
                 </li>
-                <li>Home
+                <li>
+                  <a href="#">Crea la tua Libreria
+                  </a>
                 </li>
               </ul>
             </div>
@@ -32,13 +40,30 @@
               <h3>Playlist
               </h3>
               <ul>
-                <li>Crea
+                <li>
+                  <i class="fas fa-plus"></i>
+                  <a href="#">Crea Playlist
+                  </a>
                 </li>
-                <li>Nuova
+                <li>
+                  <a href="#">Nome Playlist
+                  </a>
                 </li>
-                <li>Nuova
+                <li>
+                  <a href="#">Nome Playlist
+                  </a>
                 </li>
-                <li>Nuova
+                <li>
+                  <a href="#">Nome Playlist
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist
+                  </a>
                 </li>
               </ul>
             </div>
@@ -58,24 +83,24 @@
           <!-- navigation music genres -->
           <section class="scrolling">
             <div class="genres-navbar flex">
-              <ul class="genres-list flex">
+              <ul class="genres-list flex flex-wrap">
                 <li>
-                  <a href="#">genere</a>
+                  <a href="#">In evidenza</a>
                 </li>
                 <li>
-                  <a href="#">genere</a>
+                  <a href="#">Podcast</a>
                 </li>
                 <li>
-                  <a href="#">genere</a>
+                  <a href="#">Classifiche</a>
                 </li>
                 <li>
-                  <a href="#">genere</a>
+                  <a href="#">Generi e moood</a>
                 </li>
                 <li>
-                  <a href="#">genere</a>
+                  <a href="#">Nuove uscite</a>
                 </li>
                 <li>
-                  <a href="#">genere</a>
+                  <a href="#">Scopri</a>
                 </li>
               </ul>
             </div>
@@ -85,7 +110,7 @@
                 <h2>Recently played
                 </h2>
               </div>
-              <div class="music-group-img flex">
+              <div class="music-group-img flex flex-wrap">
                 <div class="title">
                   <img src="" alt="IMMAGINE">
                   <h3>Titolo
@@ -136,7 +161,7 @@
                 <h2>Creato per Pietro
                 </h2>
               </div>
-              <div class="music-group-img flex">
+              <div class="music-group-img flex flex-wrap">
                 <div class="title">
                   <img src="" alt="IMMAGINE">
                   <h3>Titolo
@@ -152,7 +177,7 @@
                 <h2>Artisti più popolari
                 </h2>
               </div>
-              <div class="music-group-img flex">
+              <div class="music-group-img flex flex-wrap">
                 <div class="title">
                   <img src="" alt="IMMAGINE">
                   <h3>Titolo
@@ -167,7 +192,7 @@
       </section>
 
       <!-- navbar fixed bottom -->
-      <section class="navbar-bottom flex">
+      <section class="player-bottom flex">
         <div class="song-box">
           songbox
         </div>

@@ -17,6 +17,9 @@ body {
 .flex-column {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .p-absolute {
   position: absolute;
 }
@@ -33,10 +36,38 @@ body {
   width: 100%;
 }
 
+/* typo */
+.opacity-05 {
+  opacity: .5;
+}
+.opacity-07 {
+  opacity: .7;
+}
+.opacity-08 {
+  opacity: .8;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 15px;
+}
+h4 {
+  font-size: 12px;
+}
+* a {
+  opacity: .6;
+  text-decoration: none;
+  color: white;
+}
 /* PAGE */
 .app-container {
   height: 100vh;
 }
+
 
 /* section main */
 .section-main {
@@ -48,7 +79,7 @@ body {
 /* SIDEBAR left */
 .section-main .sidebar-left {
   /* debug color */
-  background-color: #1c0707;
+  background-color: black;
   width: 200px;
   justify-content: space-between;
 }
@@ -99,11 +130,16 @@ body {
 /* navbar genres */
 .main-page .genres-navbar ul {
   list-style: none;
+  justify-content: center;
+}
+
+.main-page .genres-navbar ul li {
 }
 
 .main-page .genres-navbar ul li a{
   padding-left: 10px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* section scrollable */
@@ -114,16 +150,48 @@ body {
 
 .main-page .scrolling .music-group-img {
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .main-page .scrolling .music-group-img .title {
+  width: calc((100% / 6) - 10px);
 }
 
 /* SECTION BOTTOM bottom bar */
-.navbar-bottom {
+.player-bottom {
   /* debug color */
   background-color: brown;
   height: 70px;
   justify-content: space-between;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:1200px) {
+
+  /* box titoli - sezione scrolling */
+  .main-page .scrolling .music-group-img .title {
+    width: calc((100% / 4) - 10px);
+    justify-content:center;
+  }
+}
+
+/* <992px */
+@media screen and (max-width:992px) {
+
+  /* box titoli - sezione scrolling */
+  .main-page .scrolling .music-group-img .title {
+    width: calc((100% / 3) - 10px);
+    justify-content:center;
+  }
+}
+
+/* <767px */
+@media screen and (max-width:767px) {
+
+  /* box titoli - sezione scrolling */
+  .main-page .scrolling .music-group-img .title {
+    width: calc((100% / 2) - 10px);
+    justify-content:center;
+  }
 }
