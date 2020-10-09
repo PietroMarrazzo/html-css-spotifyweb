@@ -90,11 +90,57 @@ h4 {
   background-color: black;
   width: 200px;
   justify-content: space-between;
+  padding-left: 10px;
 }
 
-.section-main .sidebar-left .playlist i {
-  background-color: gray;
-  padding: 5px;
+/* logo */
+.section-main .sidebar-left .sidebar-box-top .logo-main img {
+  padding-top: 20px;
+  width: 130px;
+  transition: opacity .3s;
+}
+
+.section-main .sidebar-left .sidebar-box-top .logo-main img:hover {
+  opacity: .5;
+}
+
+/* list utilities */
+.section-main .sidebar-left .sidebar-box-top .utilities {
+  padding-top: 15px;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities li {
+  padding-bottom: 8px;
+  transition: opacity .3s;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities a h4 {
+  align-self: center;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities img {
+  width: 25px;
+}
+
+/* utilities hover */
+.section-main .sidebar-left .sidebar-box-top .utilities li:hover {
+  opacity: .5;
+}
+
+/* playlist management */
+.section-main .sidebar-left .sidebar-box-top .playlist {
+  padding-top: 10px;
+}
+
+.section-main .sidebar-left .sidebar-box-top .playlist h3 {
+  text-transform: uppercase;
+}
+
+.section-main .sidebar-left .sidebar-box-top .playlist i {
+  background-color: lightgray;
+  color: #333;
+  padding: 10px;
+  font-size: 14px;
 }
 
 /* MAIN CONTENT PAGE */
