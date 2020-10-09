@@ -349,6 +349,41 @@ h5 {
   justify-content: space-between;
 }
 
+.player-bottom .song-box {
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.player-bottom .song-box img {
+  height: 40px;
+}
+
+.player-bottom .song-box .text-song {
+  padding-left: 10px;
+}
+
+.player-bottom .song-box .text-song h5:hover {
+  text-decoration: underline;
+}
+
+.player-bottom .song-box .utilities-icon {
+  padding-left: 20px;
+}
+
+.player-bottom .song-box .utilities-icon i {
+  padding: 0px 10px;
+}
+
+.player-bottom .song-box .utilities-icon i:hover {
+  color: #1ed760;
+  opacity: 1;
+}
+
+.player-bottom .player {
+  align-content: center;
+}
+
 
 /* MEDIA QUERY */
 /* <1200px */
