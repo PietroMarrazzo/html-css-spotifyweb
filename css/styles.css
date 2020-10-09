@@ -103,21 +103,17 @@ h5 {
 }
 
 /* logo */
-.section-main .sidebar-left .sidebar-box-top .logo-main img {
+.section-main .sidebar-left .sidebar-box-top .logo-box img {
   padding-top: 20px;
   width: 130px;
-  transition: opacity .3s;
-}
-
-.section-main .sidebar-left .sidebar-box-top .logo-main img:hover {
-  opacity: .8;
+  transition: color .3s,
 }
 
 /* list utilities */
 .section-main .sidebar-left .sidebar-box-top .utilities {
   padding-top: 15px;
 }
-
+/* home button */
 .section-main .sidebar-left .sidebar-box-top .utilities #home {
   color: white;
 }
@@ -126,26 +122,6 @@ h5 {
   color: #1ed760;
 }
 
-.section-main .sidebar-left .sidebar-box-top .utilities a:before {
-  display: none;
-  content: "";
-  border-left: 4px solid #1ed760;
-  position: relative;
-  right: 15px;
-}
-
-.section-main .sidebar-left .sidebar-box-top .utilities #home:before {
-  display: inline;
-  content: "";
-  border-left: 4px solid #1ed760;
-  position: relative;
-  right: 15px;
-}
-
-
-.section-main .sidebar-left .sidebar-box-top .utilities li:hover a:before {
-  display: inline;
-}
 
 .section-main .sidebar-left .sidebar-box-top .utilities li {
   padding-bottom: 8px;
@@ -162,10 +138,33 @@ h5 {
   font-weight: 400;
 }
 
+/* green left pseudo element */
+.section-main .sidebar-left .sidebar-box-top .utilities a:before {
+  display: none;
+  content: "";
+  border-left: 4px solid #1ed760;
+  position: relative;
+  right: 15px;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities #home:before {
+  display: inline;
+  content: "";
+  border-left: 4px solid #1ed760;
+  position: relative;
+  right: 15px;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities li:hover a:before {
+  display: inline;
+}
+
+/* utilities img plus */
 .section-main .sidebar-left img {
   width: 25px;
   margin-right: 5px;
 }
+
 
 /* utilities hover */
 .section-main .sidebar-left .sidebar-box-top .utilities li:hover {
@@ -205,7 +204,13 @@ h5 {
   padding: 10px;
   font-size: 14px;
   margin-right: 5px;
+  transition: font-size .3s;
 }
+
+.section-main .sidebar-left .sidebar-box-top .playlist li:hover i{
+  font-size: 16px;
+}
+
 
 /* account sidebar bot */
 .sidebar-left .account {
@@ -244,8 +249,6 @@ h5 {
   height: 30px;
   width: 30px;
 }
-
-
 
 
 /* MAIN CONTENT PAGE */
