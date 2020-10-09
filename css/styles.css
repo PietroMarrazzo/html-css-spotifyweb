@@ -41,6 +41,9 @@ body {
 .w-100 {
   width: 100%;
 }
+.hidden {
+  display: none;
+}
 
 /* typo */
 .opacity-05 {
@@ -77,14 +80,11 @@ h5 {
   opacity: 1;
 }
 
-/* icons */
-
 
 /* PAGE */
 .app-container {
   height: 100vh;
 }
-
 
 /* section main */
 .section-main {
@@ -106,6 +106,12 @@ h5 {
 .section-main .sidebar-left .sidebar-box-top .logo-box img {
   padding-top: 20px;
   width: 130px;
+  transition: color .3s,
+}
+
+.section-main .sidebar-left .sidebar-box-top .logo-box #logo-small {
+  padding-top: 20px;
+  width: 40px;
   transition: color .3s,
 }
 
@@ -339,6 +345,7 @@ h5 {
 
 
 /* MEDIA QUERY */
+/* <1200px */
 @media screen and (max-width:1200px) {
 
   /* box titoli - sezione scrolling */
@@ -358,9 +365,30 @@ h5 {
   }
 }
 
-/* <767px */
+/* <767px md */
 @media screen and (max-width:767px) {
-
+  /* elementi hidden*/
+  .md-hidden {
+    display: none;
+  }
+  .md-show {
+    display: inline;
+  }
+  /* sidebar left reduced */
+  .section-main .sidebar-left {
+    padding-left: 0px;
+    width: 60px;
+    align-items: center;
+  }
+  .section-main .sidebar-left .sidebar-box-top .utilities a:before {
+    display: none;
+  }
+  .section-main .sidebar-left .sidebar-box-top .utilities #home:before {
+    display: none;
+  }
+  .sidebar-left .account .download-app {
+    border-bottom: 0px;
+  }
   /* box titoli - sezione scrolling */
   .main-page .scrolling .album-list li {
     width: calc((100% / 2) - 10px);
