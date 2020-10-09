@@ -5,9 +5,8 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  /* debug color */
   color: #fff;
 }
 
@@ -65,15 +64,18 @@ h3 {
 h4 {
   font-size: 12px;
 }
-h6 {
-  font-size: 10px;
+h5 {
+  font-size: 11px;
 }
 * a {
   opacity: .6;
   text-decoration: none;
   color: white;
 }
-
+.text-white {
+  color: white;
+  opacity: 1;
+}
 
 /* icons */
 
@@ -87,7 +89,7 @@ h6 {
 /* section main */
 .section-main {
   /* debug color */
-  background-color: #6a5e5e;
+  background-color: black;
   flex-grow: 1;
 }
 
@@ -114,6 +116,35 @@ h6 {
 /* list utilities */
 .section-main .sidebar-left .sidebar-box-top .utilities {
   padding-top: 15px;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities #home {
+  color: white;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities #home:hover {
+  color: #1ed760;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities a:before {
+  display: none;
+  content: "";
+  border-left: 4px solid #1ed760;
+  position: relative;
+  right: 15px;
+}
+
+.section-main .sidebar-left .sidebar-box-top .utilities #home:before {
+  display: inline;
+  content: "";
+  border-left: 4px solid #1ed760;
+  position: relative;
+  right: 15px;
+}
+
+
+.section-main .sidebar-left .sidebar-box-top .utilities li:hover a:before {
+  display: inline;
 }
 
 .section-main .sidebar-left .sidebar-box-top .utilities li {
@@ -186,9 +217,14 @@ h6 {
   border-radius: 2px;
 }
 
+.sidebar-left .account .account-logged a {
+
+}
+
 .sidebar-left .account .download-app a,
 .sidebar-left .account .account-logged a {
   padding: 10px 0px;
+  transition: color .4s, opacity .4s;
 }
 
 .sidebar-left .account .download-app a i,
@@ -196,7 +232,18 @@ h6 {
   padding-right: 5px;
 }
 
+.sidebar-left .account .download-app a:hover,
+.sidebar-left .account .account-logged a:hover {
+  color: #1ed760;
+  opacity: .7;
+}
 
+.sidebar-left .account .account-logged #profile-img {
+  background-color: gray;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
 
 
 
@@ -206,6 +253,7 @@ h6 {
   flex-grow: 1;
   top: 0;
   left: 0;
+  background-color: gray;
 }
 
 /* transparent upgrade */
