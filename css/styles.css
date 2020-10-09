@@ -377,17 +377,39 @@ h5 {
   /* sidebar left reduced */
   .section-main .sidebar-left {
     padding-left: 0px;
+    margin-right: 0px;
     width: 60px;
     align-items: center;
   }
-  .section-main .sidebar-left .sidebar-box-top .utilities a:before {
+  .section-main .sidebar-left img {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .sidebar-left .account,
+  .sidebar-left .account .download-app a i {
+    padding-right: 0px;
+  }
+  .sidebar-left .account .account-logged a {
+    padding-right: 0px;
+  }
+  .sidebar-left .account .download-app {
+    border-bottom: 0px;
+  }
+  .section-main .sidebar-left .sidebar-box-top .utilities {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sidebar-left .account .download-app {
+    display: flex;
+    justify-content: center;
+  }
+  /* pseudo elementi green hidden */
+  .section-main .sidebar-left .sidebar-box-top .utilities li:hover a:before {
     display: none;
   }
   .section-main .sidebar-left .sidebar-box-top .utilities #home:before {
     display: none;
-  }
-  .sidebar-left .account .download-app {
-    border-bottom: 0px;
   }
   /* box titoli - sezione scrolling */
   .main-page .scrolling .album-list li {
