@@ -373,13 +373,19 @@ h5 {
 /* section scrollable */
 .main-page .scrolling .row {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .main-page .scrolling .album-list {
   width: 100%;
   padding-top: 30px;
- }
+  /* justify-content: space-between; */
+}
+
+.main-page .scrolling .long-list {
+  justify-content: space-between;
+}
+
 
 /* width&height album rows */
 .main-page .scrolling .album-list li {
@@ -389,8 +395,8 @@ h5 {
   align-items: center;
 }
 
-.main-page .scrolling .album-list li:not(:first-child) {
-  margin-left: 15px;
+.main-page .scrolling .album-list li:not(:first-child):not(:nth-child(5)) {
+  margin-left: 30px;
 }
 
 .main-page .scrolling .album-list li img {
@@ -400,6 +406,7 @@ h5 {
 
 .main-page .scrolling .album-list li a {
   padding: 5px 0px;
+  text-align: center;
 }
 
 .main-page .scrolling .album-list li a:hover img{
@@ -410,6 +417,12 @@ h5 {
 .main-page .scrolling .album-list li a:hover h4 {
   text-decoration: underline;
 }
+
+
+.main-page .scrolling .row-category h4 {
+  padding-top: 15px;
+}
+
 
 /* play button mousehover */
 .main-page .scrolling .album-list li a i {
@@ -425,10 +438,6 @@ h5 {
 .main-page .scrolling .album-list li a:hover i {
   display: inline-block;
 }
-
-
-
-
 
 
 
@@ -640,8 +649,17 @@ h5 {
 
   /* box titoli - sezione scrolling */
   .main-page .scrolling .album-list li {
-    width: calc((100% / 4) - 10px);
-    justify-content:center;
+    width: calc((100% / 4) - 20px);
+    /* justify-content:center; */
+  }
+/* :not(:first-child):not(:nth-child(5))  */
+  .main-page .scrolling .album-list li:not(:first-child):not(:nth-child(5)) {
+    margin-left: 20px;
+  }
+
+  /* long album list */
+  .main-page .scrolling .long-list {
+    justify-content: flex-start;
   }
 }
 
@@ -652,6 +670,17 @@ h5 {
   .main-page .scrolling .album-list li {
     width: calc((100% / 3) - 10px);
     justify-content:center;
+  }
+
+  .main-page .scrolling .long-list {
+    justify-content: space-between;
+  }
+
+  .main-page .scrolling .album-list li:not(:first-child):not(:nth-child(5)) {
+    margin-left: 0px;
+  }
+  .main-page .scrolling .album-list:not(.long-list) li:not(:first-child):not(:nth-child(5)) {
+    margin-left: 20px;
   }
 }
 
@@ -706,4 +735,9 @@ h5 {
     width: calc((100% / 2) - 10px);
     justify-content:center;
   }
+
+    /* album list spacing */
+    .main-page .scrolling .album-list:not(.long-list) li:not(:first-child):not(:nth-child(5)) {
+      margin-left: 20px;
+    }
 }
