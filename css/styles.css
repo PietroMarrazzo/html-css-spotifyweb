@@ -539,6 +539,9 @@ h5 {
 .player-bottom .player-utilities .audio-bar:hover:after {
   display: inline-block;
 }
+
+
+
 /* MEDIA QUERY */
 /* <1200px */
 @media screen and (max-width:1200px) {
