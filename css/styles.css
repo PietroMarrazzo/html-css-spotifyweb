@@ -398,13 +398,13 @@ h5 {
 
 .player-bottom .player a {
   padding: 0px 10px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   transition: color .2s;
 }
 
 .player-bottom .player #btn-big {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .player-bottom .player a:hover {
@@ -431,10 +431,12 @@ h5 {
 /* time bar */
 .player-bottom .player .player-bar {
   align-items: center;
+  margin-top: 8px;
 }
 
 .player-bottom .player .player-bar h5 {
   padding: 0px 30px;
+  font-weight: 400;
 }
 
 .player-bottom .player .time-bar {
@@ -444,7 +446,93 @@ h5 {
   border-radius: 100px;
 }
 
+.player-bottom .player .time-bar:hover,
+.player-bottom .player-utilities .audio-bar:hover {
+  cursor: pointer;
+}
 
+.player-bottom .player .time-passed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 4px;
+  background-color: lightgray;
+  border-radius: 100px;
+  transition: background-color .3s;
+}
+
+.player-bottom .player .time-bar:after {
+  display: inline-block;
+  /* display: none; */
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 80px;
+  height: 10px;
+  width: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: white;
+}
+
+.player-bottom .player .time-bar:hover .time-passed {
+  display: inline-block;
+  background-color: #1ed760;
+}
+
+.player-bottom .player .time-bar:hover .time-bar::after {
+  display: none;
+}
+
+/* player utilities */
+.player-bottom .player-utilities {
+  justify-content: center;
+  align-items: center;
+}
+/* audio bar */
+.player-bottom .player-utilities i  {
+  font-size: 12px;
+}
+
+.player-bottom .player-utilities .audio-bar,
+.player-bottom .player-utilities i {
+  padding-right: 15px;
+}
+
+.player-bottom .player-utilities .audio-bar {
+  width: 100px;
+  height: 4px;
+  background-color: gray;
+  border-radius: 100px;
+}
+
+.player-bottom .player-utilities .audio-effective {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20;
+  height: 4px;
+  background-color: lightgray;
+  border-radius: 100px;
+  transition: background-color .3s;
+}
+
+.player-bottom .player .time-bar:after {
+  display: inline-block;
+  /* display: none; */
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 80px;
+  height: 7px;
+  width: 7px;
+  border: 3px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: white;
+}
 
 /* MEDIA QUERY */
 /* <1200px */
